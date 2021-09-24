@@ -1,0 +1,502 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <title>Katalog Buku</title>
+    <style>
+        @font-face /*perintah untuk memanggil font eksternal*/
+        {
+            font-family: 'Poppins';
+            src: url('font/Poppins-Regular.ttf');/*memanggil file font eksternalnya di folder nexa*/
+        }
+        body{
+            font-family: 'Poppins' ;
+        }
+        .col{
+            border-radius: 0.75rem;
+            border: 1px grey;
+            margin: 1rem;
+            padding: 0.5rem;
+            box-shadow: 0 0 4px 4px #00000015;
+            
+        }
+        .subjudul{
+            margin-top: 2rem;
+        }
+        .col2{
+            padding: 0;
+            text-align: center;
+        }
+        .col3{
+            padding-top: 1rem;
+
+        }
+        .col4{
+            margin-top: -0.5rem;
+        }
+        .col5{
+            padding-top:0.5rem;
+        }
+        .poster{
+            padding:0;
+        }
+
+        .lihat{
+            border: 0;
+        }
+        .display-6{
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .konten{
+            font-size: 13px;
+            text-align: justify;
+        }
+        .navbar{
+            background-color: white;
+        }
+    </style>
+  </head>
+  <body>
+
+    <!-- container -->
+    <div class="container">
+        <!-- Navbar -->
+        <nav class="navbar navbar-light ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                <img src="img/logo.png" alt="" width="35" height="29" class="d-inline-block align-text-top">
+                   <b>Books catalog</b> 
+                </a>
+
+                <button type="button" class="btn btn-primary admin">Admin</button>
+
+            </div>
+        </nav>
+        <!-- end navbar -->
+
+        <h3 class="subjudul">Katalog Buku</h3>  
+        <!-- row-katalog -->   
+        <div class="row">
+                <div class="col">
+                    <div class="col2">
+                        <img class="poster" src="img/wingit.jpg" alt="" width="150rem">
+                    </div>
+                    <div class="col3">
+                        <h6>Wingit</h6>
+                    </div>
+                    <div class="col4">
+                        <small class="text-muted">Sara Wijayanto</small>
+                    </div>
+                    <div class="col5">
+                        <h5>Rp.100.000</h5>
+                    </div>
+                    <div class="col6 d-grid gap-2">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-outline-success lihat" data-bs-toggle="modal" data-bs-target="#wingit">
+                            Sinopsis buku
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="wingit" tabindex="-1" aria-labelledby="wingitLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="wingitLabel">Sinopsis Buku</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h3>Wingit</h3>
+                                    <p class="text-muted konten">Hantu tersebut berwujud seorang anak kecil laki-laki. Fadi mengambil alih penelusuran saat makhluk tersebut berkomunikasi dengan saya. Selanjutnya kami menyebut hantu anak kecil tersebut dengan nama Adik. Ia memiliki kebiasaan mengangkat kaki kanannya, lalu menggesekkan tulang kering kakinya ke betis kaki kiri seperti merasakan gatal.
+
+                                        Ternyata, Adik tidak sendirian. Ia bersama dengan seorang kuntilanak yang ia panggil Tante. Adik bahkan menunjukkan di mana lokasi Tante berada, tepatnya di sebuah pohon. Inilah penelusuran kisah Adik dan Tante Kun beserta hantu-hantu lainnya.</p>
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+
+                <div class="col">
+                    <div class="col2">
+                        <img class="poster" src="img/start.jpg" alt="" width="150rem">
+                    </div>
+                    <div class="col3">
+                        <h6>Start With Why</h6>
+                    </div>
+                    <div class="col4">
+                        <small class="text-muted konten"> Simon Sinek</small>
+                    </div>
+                    <div class="col5">
+                        <h5>Rp.93.500</h5>
+                    </div>
+                    <div class="col6 d-grid gap-2">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-outline-success lihat" data-bs-toggle="modal" data-bs-target="#start-with">
+                            Sinopsis buku
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="start-with" tabindex="-1" aria-labelledby="start-withLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="start-withLabel">Sinopsis Buku</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                <h3>Start With Why</h3>
+                                <p class="text-muted konten">
+                                    Start With Why adalah buku tentang bagaimana pemimpin besar menginspirasi orang untuk mengambil tindakan. Start with Why dapat diaplikasikan dalam setiap aspek, baik hidup, karir, maupun dalam membangun bisnis / organisasi, atau menginspirasi karyawan anda. Dimulai dengan pertanyaan mengapa (Why) dalam setiap langkah yang anda ambil. Contoh paling sederhana dalam hidup anda, “Mengapa anda terbangun di pagi hari ?”
+
+                                    Buku ini juga menjawab mengapa sebagian organisasi lebih inovatif, berpengaruh, dan lebih menguntungkan dibandingkan yang lain ; dimulai dengan pertanyaan ‘mengapa’ dibandingkan dengan ‘apa’.
+                                </p>
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+
+                <div class="col">
+                    <div class="col2">
+                        <img class="poster" src="img/jika-kita.jpg" alt="" width="150rem">
+                    </div>
+                    <div class="col3">
+                        <h6>Jika Kita Tak Pernah Jadi Apa-apa</h6>
+                    </div>
+                    <div class="col4">
+                        <small class="text-muted">Alvi syahrini</small>
+                    </div>
+                    <div class="col5">
+                        <h5>Rp.74.400</h5>
+                    </div>
+                    <div class="col6 d-grid gap-2">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-outline-success lihat" data-bs-toggle="modal" data-bs-target="#jika-kita">
+                            Sinopsis buku
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="jika-kita" tabindex="-1" aria-labelledby="jika-kitaLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="jika-kitaLabel">Sinopsis Buku</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                <h3>Jika Kita Tak Pernah Jadi Apa-apa</h3>
+                                <p class="text-muted konten">
+                                    Kau melihat teman-teman dan mereka sudah mendapatkan impian. Sementara kau masih termangu, menggenggam harapan. Pelan, dalam hati kau berujar, “Kapan mimpiku terwujud?”
+
+                                    Selama perjalanan mencapai tujuan, adakalanya kau melihat sekeliling… menakar jauh jangkauan. Atau, kau malah membandingkannya dengan orang lain. Lalu, lupa melanjutkan perjalanan.
+
+                                    Benarkah segala usaha dan upayamu selama ini lebur bersama kecewa yang kau bangun sendiri? Sungguhkah sesuatu yang hanya kau lihat dalam dunia maya menjadikanmu merasa bukan apa-apa?
+
+                                    Jika Kita Tak Pernah Jadi Apa-Apa akan menemanimu selama perjalanan. 
+                                </p>
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+
+                <div class="col">
+                    <div class="col2">
+                        <img class="poster" src="img/haikyu.jpg" alt="" width="150rem">
+                    </div>
+                    <div class="col3">
+                        <h6>Haikyu!!! Fly High!</h6>
+                    </div>
+                    <div class="col4">
+                        <small class="text-muted">Haruichi Furudate</small>
+                    </div>
+                    <div class="col5">
+                        <h5>Rp.22.000</h5>
+                    </div>
+                    <div class="col6 d-grid gap-2">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-outline-success lihat" data-bs-toggle="modal" data-bs-target="#haikyu">
+                            Sinopsis buku
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="haikyu" tabindex="-1" aria-labelledby="haikyuLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="haikyuLabel">Sinopsis Buku</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                <h3>Haikyu!!! Fly High!</h3>
+                                <p class="text-muted konten">
+                                    Tokoh utama dalam serial ini adalah Hinata Shouyo yang gemar bermain voli sejak usia belia. 
+                                    Kecintaannya akan voli semakin bertambah semenjak ia melihat kemampuan tim voli dari SMU Karasuno.  Ia mengidolakan kemampuan ace mereka yang biasa disebut 'raksasa kecil'. Hinata memiliki tinggi badan yang bisa dikatakan paling pendek di antara anggota lainnya, 162cm.  Untuk ukuran atlet bola voli, tinggi tersebut dinilai belum memenuhi standar ideal pemain voli. Namun, Hinata berhasil mengalihkan perhatian orang dari tubuh kecilnya ke keahliannya dalam bermain voli. Ia mampu melompat tinggi melampaui net voli. Sewaktu Hinata duduk di bangku SMP, ia pernah mengikuti pertandingan voli melawan SMP Kitagawa Daichi yang memiliki pemain andalan bernama Kageyama Tobio.  Sayangnya, dalam pertandingan tersebut, tim voli sekolah Hinata mengalami kekalahan Hinata lantas berniat membalaskan dendamnya kepada Kageyama dengan masuk di SMU Karasuno dan bergabung dalam tim voli mereka.  
+                                </p>
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+
+                <div class="col">
+                    <div class="col2">
+                        <img class="poster" src="img/milea.jpg" alt="" width="150rem">
+                    </div>
+                    <div class="col3">
+                        <h6>Milea</h6>
+                    </div>
+                    <div class="col4">
+                        <small class="text-muted">Pidi Baiq</small>
+                    </div>
+                    <div class="col5">
+                        <h5>Rp.71.000</h5>
+                    </div>
+                    <div class="col6 d-grid gap-2">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-outline-success lihat" data-bs-toggle="modal" data-bs-target="#milea">
+                            Sinopsis buku
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="milea" tabindex="-1" aria-labelledby="mileaLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="mileaLabel">Sinopsis Buku</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h3>Milea</h3>
+                                    <p class="text-muted konten">
+                                        Film ini bercerita tentang Bandung yang kembali ke era 90-an. Panglima tempur salah satu geng motor, Dilan menjalin hubungan dengan seorang siswi baru dari Jakarta bernama Milea. 
+                                        Dilan berusaha keras untuk mendapatkan Milea. Awalnya Milea merasa aneh dengan Dilan, namun lama-lama keduanya saling jatuh cinta juga. Jalinan hubungan antara Milea dan Dilan ternyata membuat teman-temannya berpikir berbeda, Dilan mulai terasa jauh dengan anggota geng. Suatu hari terjadi peristiwa, salah satu anggota geng motor, Akew meninggal akibat dikeroyok oleh sekelompok orang. Kejadian itu membuat Milea khawatir akan keselamatan Dilan. Milea memutuskan untuk berpisah dengan Dilan. Perpisahan yang tadinya hanya gertakan menjadi perpisahan yang berlangsung lama sampai keduanya lulus kuliah dan dewasa. Akan tetapi, Dilan dan Milea masih membawa perasaan yang sama saat bertemu di reuni, hanya saja masing-masing sudah memiliki pasangan.
+
+                                       
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+
+                <div class="col">
+                    <div class="col2">
+                        <img class="poster" src="img/nebula.jpg" alt="" width="150rem">
+                    </div>
+                    <div class="col3">
+                        <h6>Nebula</h6>
+                    </div>
+                    <div class="col4">
+                        <small class="text-muted">TereLiye</small>
+                    </div>
+                    <div class="col5">
+                        <h5>Rp.85.0000</h5>
+                    </div>
+                    <div class="col6 d-grid gap-2">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-outline-success lihat" data-bs-toggle="modal" data-bs-target="#nebula">
+                            Sinopsis buku
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="nebula" tabindex="-1" aria-labelledby="nebulaLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="nebulaLabel">Sinopsis Buku</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                <h3>Nebula</h3>
+                                <p class="text-muted konten">
+                                    Nebula adalah pelengkap dari puzzle kisah masa lalu Selena. Masih melanjutkan kisah antara Selena dengan sahabat-sahabatnya di Akademi Bayangan Tingkat Tinggi  yaitu Mata dan Tazk, dan petualangan mereka di klan Nebula.
+                                    Di novel ini pula kamu bisa mengetahui bagaimana Selena menjadi seorang pengintai klan Nebula yang hebat, hubungan di antara Selena dan Tamus, serta berbagai rahasia dan misteri tentang siapa orangtua dari Raib akan terjawab di buku ini.
+                                </p>
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+
+                <div class="col">
+                    <div class="col2">
+                        <img class="poster" src="img/sebelas.jpg" alt="" width="150rem">
+                    </div>
+                    <div class="col3">
+                        <h6>11:11</h6>
+                    </div>
+                    <div class="col4">
+                        <small class="text-muted">Fiersa Besari</small>
+                    </div>
+                    <div class="col5">
+                        <h5>Rp.71.0000</h5>
+                    </div>
+                    <div class="col6 d-grid gap-2">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-outline-success lihat" data-bs-toggle="modal" data-bs-target="#sebelas">
+                            Sinopsis buku
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="sebelas" tabindex="-1" aria-labelledby="sebelasLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="sebelasLabel">Sinopsis Buku</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                <h3>11:11</h3>
+                                <p class="text-muted konten">
+                                    Buku ini sejatinya adalah kumpulan cerita pendek. Namun, bila pengarang lain menulis cerpen berbagai tema di koran untuk beberapa lama lalu dikumpulkan dalam buku, Fiersa kelihatannya menulis simultan satu per satu cerita serta lagunya dan membukukannya sekaligus.
+                                Di 11:11 si Bung melompat dari zona nyamannya. Ia mengeksplorasi lebih jauh, menawarkan cerita yang tak lagi terbatas pada kisah di bumi atau kisah para manusia. Di 11:11 fantasinya melanglang buana hingga jauh ke alam lain dan merasuk ke sanubari makhluk lain.
+                                Simak misalnya cerita “Acak Corak”. Kita diajak bertemu pria yang dikatakan “sang pengilham bagi para pencuri dan pembunuh”.
+                                Meski tak disebut sepanjang cerita kita tahu pria itu adalah iblis yang tengah gundah lantaran tugasnya merayu manusia berbuat jahat telah diambil alih oleh manusia sendiri.
+                                </p>
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+ 
+                <div class="col">
+                    <div class="col2">
+                        <img class="poster" src="img/Rumah-kaca.jpg" alt="" width="150rem">
+                    </div>
+                    <div class="col3">
+                        <h6>Rumah Kaca</h6>
+                    </div>
+                    <div class="col4">
+                        <small class="text-muted">Pramoedya Ananta Toer</small>
+                    </div>
+                    <div class="col5">
+                        <h5>Rp.110.0000</h5>
+                    </div>
+                    <div class="col6 d-grid gap-2">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-outline-success lihat" data-bs-toggle="modal" data-bs-target="#rumah">
+                            Sinopsis buku
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="rumah" tabindex="-1" aria-labelledby="rumahLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="rumahLabel">Sinopsis Buku</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                <h3>Rumah Kaca</h3>
+                                <p class="tet-muted konten">
+                                Buku ini seolah mengisahkan kilas balik kejadian dalam 'Jejak Langkah' dalam perspektif Pangemanann. Dengan kelicinannya sebagai agen rahasia, dia tak berhenti dengan pembuangan Minke. Dirancangnya kerusuhan rasial yang mengadu dombakan antara pribumi dengan kaum Tionghoa, dimulai dari kota Sukabumi, disambung dengan kota kota lainnya di seluruh pulau Jawa. Sebuah operasi yang gilang gemilang untuk mendiskreditkan SDI yang kemudian bertransformasi menjadi Syarikat Islam.
+                                Namun angin perubahan tak dapat dilawan. Alih alih organisasi kemasyarakatan makin surut, malah berdiri partai pertama di Hindia ini : Indische Partij, yang didirikan trio DWT. Keranjingan atau kesadaran berorganisasi tumbuh deras kala itu. Sampailah jaman pada tahun 1914, dimana berkobar perang dunia pertama di Eropa. Gubernur Jenderal Idenburg mengakhiri masa jabatannya
+                                </p>
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+
+                <div class="col">
+                    <div class="col2">
+                        <img class="poster" src="img/gigi.jpg" alt="" width="150rem">
+                    </div>
+                    <div class="col3">
+                        <h6>Gigi koko</h6>
+                    </div>
+                    <div class="col4">
+                        <small class="text-muted">Mhia</small>
+                    </div>
+                    <div class="col5">
+                        <h5>Rp.52.0000</h5>
+                    </div>
+                    <div class="col6 d-grid gap-2">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-outline-success lihat" data-bs-toggle="modal" data-bs-target="#gigi">
+                            Sinopsis buku
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="gigi" tabindex="-1" aria-labelledby="gigiLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="gigiLabel">Sinopsis Buku</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                <h3>Gigi Koko</h3>
+                                <p class="text-muted konten">
+                                    Ketika usia anaknya menginjak 25 tahun dan belum pernah terlihat memiliki pacar, Miftha—Ibunda dari Jeysia Rianggita alias Gigi, mulai sibuk mencarikan jodoh untuk anak bungsunya. Segala macam cara Miftha gunakan. Mulai dari membidik anak-anak lelaki sekomplek, menghubungi teman-teman lamanya demi menanyakan kemungkinan mereka memiliki anak lelaki yang bisa dikenalkan dengan Gigi, sampai menyuruh Ikbal dan Arkhan–dua anak lelakinya–untuk mendatangkan teman-teman kerja mereka ke rumah.
+                                    Namun, semua perjuangan Miftha sia-sia. Di ujung putus asanya, Miftha dipertemukan kembali dengan Varco alias Koko, mantan mahasiswanya yang saat ini tengah menempuh gelar doktoral di Universitas tempatnya mengajar. Varco yang sopan, pintar, dan sudah menjadi dosen di sebuah Universitas, membuat Miftha tertarik memperkenalkan pria itu dengan Gigi. So, apakah usaha Miftha kali ini membuahkan hasil?
+                                </p>
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+
+                
+        </div>
+        <!-- end row katalog -->
+    </div>
+    <!-- end container -->
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
